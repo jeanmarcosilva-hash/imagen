@@ -153,5 +153,40 @@ header div.container{
     display: block;
     padding:  8px;
 }
+
+.botao-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.botao-menu button{
+    padding: 8px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias{
+        grid-template-columns: repeat(2, 49% );
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu{
+        display: none;
+    }
 }
 
